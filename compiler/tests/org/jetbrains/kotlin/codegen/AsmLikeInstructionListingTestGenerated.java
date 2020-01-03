@@ -129,6 +129,21 @@ public class AsmLikeInstructionListingTestGenerated extends AbstractAsmLikeInstr
             runTest("compiler/testData/codegen/asmLike/typeAnnotations/complex.kt");
         }
 
+        @TestMetadata("defaultArgs.kt")
+        public void testDefaultArgs() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/defaultArgs.kt");
+        }
+
+        @TestMetadata("jvmOverload.kt")
+        public void testJvmOverload() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/jvmOverload.kt");
+        }
+
+        @TestMetadata("jvmStatic.kt")
+        public void testJvmStatic() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/jvmStatic.kt");
+        }
+
         @TestMetadata("notYetSupported.kt")
         public void testNotYetSupported() throws Exception {
             runTest("compiler/testData/codegen/asmLike/typeAnnotations/notYetSupported.kt");
