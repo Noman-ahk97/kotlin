@@ -129,9 +129,24 @@ public class AsmLikeInstructionListingTestGenerated extends AbstractAsmLikeInstr
             runTest("compiler/testData/codegen/asmLike/typeAnnotations/complex.kt");
         }
 
+        @TestMetadata("constructor.kt")
+        public void testConstructor() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/constructor.kt");
+        }
+
         @TestMetadata("defaultArgs.kt")
         public void testDefaultArgs() throws Exception {
             runTest("compiler/testData/codegen/asmLike/typeAnnotations/defaultArgs.kt");
+        }
+
+        @TestMetadata("enumClassConstructor.kt")
+        public void testEnumClassConstructor() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/enumClassConstructor.kt");
+        }
+
+        @TestMetadata("innerClassConstructor.kt")
+        public void testInnerClassConstructor() throws Exception {
+            runTest("compiler/testData/codegen/asmLike/typeAnnotations/innerClassConstructor.kt");
         }
 
         @TestMetadata("jvmOverload.kt")

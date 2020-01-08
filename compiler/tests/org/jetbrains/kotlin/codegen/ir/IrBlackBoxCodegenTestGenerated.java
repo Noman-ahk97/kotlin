@@ -261,16 +261,6 @@ public class IrBlackBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTes
                 KotlinTestUtils.assertAllTestsPresentByMetadataWithExcluded(this.getClass(), new File("compiler/testData/codegen/box/annotations/typeAnnotations"), Pattern.compile("^(.+)\\.kt$"), null, TargetBackend.JVM_IR, true);
             }
 
-            @TestMetadata("enumClassConstructor.kt")
-            public void testEnumClassConstructor() throws Exception {
-                runTest("compiler/testData/codegen/box/annotations/typeAnnotations/enumClassConstructor.kt");
-            }
-
-            @TestMetadata("innerClassConstructor.kt")
-            public void testInnerClassConstructor() throws Exception {
-                runTest("compiler/testData/codegen/box/annotations/typeAnnotations/innerClassConstructor.kt");
-            }
-
             @TestMetadata("methodParameters.kt")
             public void testMethodParameters() throws Exception {
                 runTest("compiler/testData/codegen/box/annotations/typeAnnotations/methodParameters.kt");

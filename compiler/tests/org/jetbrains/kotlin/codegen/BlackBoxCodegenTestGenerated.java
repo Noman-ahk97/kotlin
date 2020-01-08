@@ -261,16 +261,6 @@ public class BlackBoxCodegenTestGenerated extends AbstractBlackBoxCodegenTest {
                 KotlinTestUtils.assertAllTestsPresentByMetadataWithExcluded(this.getClass(), new File("compiler/testData/codegen/box/annotations/typeAnnotations"), Pattern.compile("^(.+)\\.kt$"), null, TargetBackend.JVM, true);
             }
 
-            @TestMetadata("enumClassConstructor.kt")
-            public void testEnumClassConstructor() throws Exception {
-                runTest("compiler/testData/codegen/box/annotations/typeAnnotations/enumClassConstructor.kt");
-            }
-
-            @TestMetadata("innerClassConstructor.kt")
-            public void testInnerClassConstructor() throws Exception {
-                runTest("compiler/testData/codegen/box/annotations/typeAnnotations/innerClassConstructor.kt");
-            }
-
             @TestMetadata("methodParameters.kt")
             public void testMethodParameters() throws Exception {
                 runTest("compiler/testData/codegen/box/annotations/typeAnnotations/methodParameters.kt");
